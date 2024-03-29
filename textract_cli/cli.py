@@ -19,7 +19,6 @@ def cli(image_path, output):
 
     # Call the detect_document_text API
     response = client.detect_document_text(Document={"Bytes": image_bytes})
-
     # Collect the detected text
     detected_text = "\n".join(
         item["Text"] for item in response["Blocks"] if item["BlockType"] == "LINE"

@@ -24,4 +24,4 @@ CI = "https://github.com/simonw/textract-cli/actions"
 textract-cli = "textract_cli.cli:cli"
 
 [project.optional-dependencies]
-test = ["pytest"]
+test = ["pytest", "moto[textract]"]
