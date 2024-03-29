@@ -1,0 +1,26 @@
+[project]
+name = "textract-cli"
+version = "0.1"
+description = "CLI for running files through AWS Textract"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/textract-cli"
+Changelog = "https://github.com/simonw/textract-cli/releases"
+Issues = "https://github.com/simonw/textract-cli/issues"
+CI = "https://github.com/simonw/textract-cli/actions"
+
+[project.entry-points.console_scripts]
+textract-cli = "textract_cli.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
