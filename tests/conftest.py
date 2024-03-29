@@ -1,4 +1,4 @@
 import os
 
 def pytest_configure():
-    os.environ["MOTO_ALLOW_NONEXISTENT_REGION"] = "1"
+    os.environ["AWS_DEFAULT_REGION"] = "us-east-1"
