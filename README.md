@@ -13,7 +13,24 @@ Install this tool using `pip`:
 ```bash
 pip install textract-cli
 ```
+## Configuration
+
+Any of the [methods for configuring](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html) `boto3` will work with this tool. Environment variables or a `~/.aws/config` file are good options here.
+
 ## Usage
+
+To run Textract OCR against a JPEG or PNG file (must be smaller than 5MB):
+```bash
+textract-cli image.jpeg
+```
+This will output to standard out. To save to a file use this:
+```bash
+textract-cli image.jpeg > output.txt
+```
+Or use the `-o/--output` option like this:
+```bash
+textract-cli image.jpeg -o output.txt
+```
 
 For help, run:
 ```bash
