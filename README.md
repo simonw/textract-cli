@@ -31,6 +31,10 @@ Or use the `-o/--output` option like this:
 ```bash
 textract-cli image.jpeg -o output.txt
 ```
+To extract tables use the `-t/--table` option like this:
+```bash
+textract-cli image.jpeg -o output.txt -t
+```
 
 For help, run:
 ```bash
