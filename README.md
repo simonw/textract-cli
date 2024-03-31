@@ -40,6 +40,10 @@ You can also use:
 ```bash
 python -m textract_cli --help
 ```
+## Alternatives
+
+[amazon-textract-textractor](https://aws-samples.github.io/amazon-textract-textractor/commandline.html) an Amazon project offering a similar but much more comprehensive CLI.
+
 ## Development
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:
